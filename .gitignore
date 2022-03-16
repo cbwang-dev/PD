@@ -1,0 +1,6 @@
+.DS_Store
+data_phase_2/
+*.mat
+x_sweep_response/
+Documents/
+*.pdf
