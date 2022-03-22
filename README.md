@@ -37,11 +37,12 @@ This is the project of P&D in Signal Processing track, KU Leuven. The general pu
 
 ## Start from Here
 
-*note: I use MacOS, and the folder navigation (slash or backslash) is different from Windows.*
+- *note 1: I use MacOS, and the folder navigation (slash or backslash) is different from Windows.*
+- *note 2: Every time when you start at the root directory, run `runme` to register MATLAB path.*
 
 ### Phase 2
 
-- Run `test_preproc_phase_2` twice, with variable `flag_LR_CNN` is set to `true` then `false`. This can take several hours. Before running this script, make sure:
+- Run `main_preproc_phase_2` twice, with variable `flag_LR_CNN` is set to `true` then `false`. This can take several hours. Before running this script, make sure:
   - original EEG data is stored in `./data_phase_2/eeg_train`. Regarding to non-disclosure aggrement, EEG files are not uploaded in this repository.
   - original envelope audio files are stored in `./data_phase_2/envelope_train`.
   - empty folders `./data_phase_2/preprocessed_CNN` and `./data_phase_2/preprocessed_LR` and its sub folders are created. The subfolder structure is identical to `./data_phase_2/eeg_train`.
@@ -51,3 +52,11 @@ This is the project of P&D in Signal Processing track, KU Leuven. The general pu
 ## Useful Commands (in root directory)
 
 - Making report: `pandoc markdown_notes/report_phase1.md -o Documents/report_phase1.pdf`
+
+
+## Question for TAs
+
+- There are 3 directions. Left, Right, Front. Do we need to use HRTF in pre processing? 
+- My problem in last year CNN was: model was correct, but the result was 50-50 random guess. I doubt that the pre processing is wrong. I need to double check this tomorrow.
+- Is the delay kind of receptive field?
+- for the concat of different trials, the detail.

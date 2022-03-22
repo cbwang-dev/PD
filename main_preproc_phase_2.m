@@ -29,7 +29,10 @@ end
 for i=1:length(LUT_EEG_1)
   allFiles = dir(strcat(eeg_dir, LUT_EEG_1{i}));
   LUT_EEG_2 = {allFiles.name};
-  for j=3:length(LUT_EEG_2) % skip '.' and '..'
+  for j=1:length(LUT_EEG_2) % skip '.' and '..'
+    if strcmp(LUT_EEG_2{j}(1), '.')
+      continue
+    end
     eeg_filename = strcat(LUT_EEG_1{i}, LUT_EEG_2{j});
     load(strcat(eeg_dir,eeg_filename));
     original_eeg = trial.RawData.EegData;
