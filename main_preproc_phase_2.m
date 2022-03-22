@@ -48,6 +48,3 @@ for i=1:length(LUT_EEG_1)
     fprintf('INFO: save file in %s\n',save_filename)
   end
 end
-
-
-

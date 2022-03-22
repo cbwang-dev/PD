@@ -18,7 +18,6 @@ function [DOA_est,S] = MUSIC_wideband(mic, fs_RIR, Q, dist_mic, c, bool_displayD
     end
     S = permute(S, [3,1,2]);
 
-
     %% start MUSIC main
     p_omega=S;
     theta = 0:0.5:180; % search angles
