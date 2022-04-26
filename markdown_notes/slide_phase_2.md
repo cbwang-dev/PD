@@ -132,7 +132,7 @@ INFO: window length: 50 ms.
 ### comments
 
 - increase lambda?
-- not enough training data?
+- not enough validation (test) data?
 
 :::
 ::::
