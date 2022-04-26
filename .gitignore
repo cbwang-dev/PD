@@ -5,3 +5,5 @@ x_sweep_response/
 Documents/
 *.pdf
 *.tex
+.vscode/
+videos_phase_2/

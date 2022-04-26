@@ -3,8 +3,6 @@ function d = LS_train_regularized(attended_envelope, train_EEG, ...
   lambda, Q_type)
   % Q_type: 1 for identity matrix (ridge regularization), 2 for discrete derivative regularizer.
 
-
-
   window_len_samples = sample_freq * window_len_time;
   lag_samples    = sample_freq * lag_time;
   C = size(train_EEG,2);
